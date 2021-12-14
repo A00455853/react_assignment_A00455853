@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react';
 function MyTown() {
   const getTemperature = async () => {
     try {
-      const res = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Bangalore&appid=9ce5f357abf3161618342c23d2a53d82');
+      const res = await fetch('https://api.openweathermap.org/data/2.5/weather?q=halifax&appid=9ce5f357abf3161618342c23d2a53d82');
       const data = await res.json();
       const temp = data && data.main && data.main.temp ? data.main.temp - 273.15 : 30;
       return Math.trunc(temp);;
@@ -26,12 +26,14 @@ function MyTown() {
   useEffect(() => {
     const getCityTemperature = async () => {
       const getTempFromAPI = await getTemperature();
+      setTemperatureC(getTempFromAPI);
       setTemperature(getTempFromAPI);
     };
     getCityTemperature();
   }, [])
 
   const [temp, setTemperature] = useState(20);
+  const [tempC, setTemperatureC] = useState(20);
 
   return (
     <div className="container">
@@ -41,11 +43,11 @@ function MyTown() {
         </Col>
         <Col className="myTown">
             <Link to='/town'>My Town</Link>
-        </Col>
+        </Col>  
       </Row>
       <Row>
         <Col>
-          <Image className="myTownImage" src={pic} />
+          <Image className="myTownImage" src={pic}/>
         </Col>
       </Row>
       <Row>
@@ -55,13 +57,17 @@ function MyTown() {
           </p>
         </Col>
       </Row>
+     
       <Row>
-        <Col>
-            <Image className="wheatherIcon" src={ temp < 10 ? cold : temp < 20 ? mild : sunny} />
+       
+        <Col>  
+        
+        <Image className="wheatherIcon" src={ tempC < 10 ? cold : tempC < 20 ? mild : sunny} />
+
         </Col>
         <Col>
             <p className="temperature">
-                {temp}
+             {temp}
             </p>
         </Col>
         <Col>
@@ -70,6 +76,7 @@ function MyTown() {
               const temp = await getTemperature(); 
               console.log(temp);
               setTemperature(temp); 
+              setTemperatureC(temp);
           }}/>
         </Col>
         <Col>
