@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  position: absolute;
+  width: 1396px;
+  height: 1575px;
+  left: 22px;
+  top: 24px;
+
+  border: 5px solid #5a12cc;
+  border-radius: 50px;
+}
+
+.aboutMe {
+  position: absolute;
+  width: 157px;
+  height: 43px;
+  left: 128px;
+  top: 111px;
+
+  font-family: Antic Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.myTown {
+  position: absolute;
+  width: 151px;
+  height: 34px;
+  left: 344px;
+  top: 111px;
+
+  font-family: Antic Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.myImage {
+  position: absolute;
+  width: 300px;
+  height: 294.94px;
+  left: 128px;
+  top: 233px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.myTownImage {
+  position: absolute;
+  width: 575px;
+  height: 295px;
+  left: 128px;
+  top: 233px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.introText {
+  position: absolute;
+  width: 815px;
+  height: 86px;
+  left: 141px;
+  top: 657px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.motiveText {
+  position: absolute;
+  width: 1153px;
+  height: 86px;
+  left: 141px;
+  top: 806px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.wheatherIcon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 222px;
+  top: 853px;
+}
+
+.temperature {
+  position: absolute;
+  width: 49px;
+  height: 48px;
+  left: 290px;
+  top: 810px;
+
+  font-family: Antic Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+
+
+  border: 1px solid #000000;
+}
+
+.degree_c {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  left: 355px;
+  top: 829px;
+
+  font-family: Antic Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #000000;
+}
+
+.degree_f {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  left: 353px;
+  top: 891px;
+}
