@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react';
 function MyTown() {
   const getTemperature = async () => {
     try {
-      const res = await fetch('https://api.openweathermap.org/data/2.5/weather?q=halifax&appid=9ce5f357abf3161618342c23d2a53d82');
+      const res = await fetch('https://api.openweathermap.org/data/2.5/weather?q=bangalore&appid=9ce5f357abf3161618342c23d2a53d82');
       const data = await res.json();
       const temp = data && data.main && data.main.temp ? data.main.temp - 273.15 : 30;
       return Math.trunc(temp);;
